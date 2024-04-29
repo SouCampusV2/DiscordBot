@@ -10,6 +10,7 @@ from botcomm.other_commands import Other_Command
 with open("config.json", mode="r") as config_file:
     config = json.load(config_file)
 
+BOT_TOKEN = config["token"]  # Токен бота
 GUILD_ID = config["guild_id"] # Айдишка сервера 
 CATEGORY_ID1 = config["category_id_1"] # Категория 1 в которой бот будет работать
 CATEGORY_ID2 = config["category_id_2"] # Категория 2 в которой бот будет работать
